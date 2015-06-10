@@ -1,8 +1,3 @@
-/* sudo usermod -a -G dialout <username>
-sudo chmod a+rw /dev/ttyACM0
-
-*/
-
 var five = require('johnny-five'),
     board = new five.Board(),
     
