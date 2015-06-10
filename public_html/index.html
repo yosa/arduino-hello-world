@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Hello World Arduino</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-lg" data-bind="led:toggle">
+                       <i class="fa fa-lightbulb-o"></i> Toggle led power
+                    </button>
+                </div>
+                
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-lg" data-bind="led:poweroff">
+                        <i class="fa fa-lightbulb-o"></i> Power off led
+                    </button>
+                </div>
+                
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-lg" data-bind="led:poweron">
+                        <i class="fa fa-lightbulb-o"></i> Power on led
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/app.js"></script>
+    </body>
+</html>
