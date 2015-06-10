@@ -13,6 +13,19 @@
             
         });
         
+        $('#btnInicio').click(function(e) {
+            
+            socket.emit('led:reloj', {
+                horaInicio: $('#horaInicio').val(),
+                minutoInicio: $('#minutoInicio').val(),
+                horaFin: $('#horaFin').val(),
+                minutoFin: $('#minutoFin').val()
+            });
+            
+            e.preventDefault();
+            
+        });
+        
     });    
 
 })(jQuery);

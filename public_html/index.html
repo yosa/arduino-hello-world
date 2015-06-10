@@ -3,6 +3,7 @@
         <title>Hello World Arduino</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
     
     <body>
@@ -10,22 +11,48 @@
         <div class="container">
             
             <div class="row">
-                <div class="col-lg-4">
-                    <button type="button" class="btn btn-primary btn-lg" data-bind="led:toggle">
-                       <i class="fa fa-lightbulb-o"></i> Toggle led power
-                    </button>
+                
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" name="horaInicio" id="horaInicio" class="form-control input-lg" placeholder="12">
+                                <div class="input-group-addon">:</div>
+                                <input type="text" name="minutoInicio" id="minutoInicio" class="form-control input-lg" placeholder="01">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" name="horaFin" id="horaFin" class="form-control input-lg" placeholder="12">
+                                <div class="input-group-addon">:</div>
+                                <input type="text" name="minutoFin" id="minutoFin" class="form-control input-lg" placeholder="05">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button id="btnInicio" type="button" class="btn btn-primary btn-lg">
+                                <i class="fa fa-lightbulb-o"></i> Iniciar
+                            </button>
+                        </div>
+                    </form>
                 </div>
                 
-                <div class="col-lg-4">
+                <div class="col-lg-6">
+                    
+                    <button type="button" class="btn btn-primary btn-lg" data-bind="led:toggle">
+                        <i class="fa fa-lightbulb-o"></i> Toggle led power
+                     </button>
+
                     <button type="button" class="btn btn-primary btn-lg" data-bind="led:poweroff">
                         <i class="fa fa-lightbulb-o"></i> Power off led
                     </button>
-                </div>
-                
-                <div class="col-lg-4">
+
                     <button type="button" class="btn btn-primary btn-lg" data-bind="led:poweron">
                         <i class="fa fa-lightbulb-o"></i> Power on led
                     </button>
+                    
                 </div>
             </div>
             
